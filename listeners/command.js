@@ -14,7 +14,7 @@ module.exports = (client) => {
                 client.commands.set(pull.name, pull);
                 console.log("Loaded command: "+ chalk.cyan(pull.name));
             } else {
-                console.log(chalk.red("[ERRORE] Cannot load command "+pull+", because it's not a valid command."))
+                console.log(chalk.red("[ERROR] Cannot load command "+pull+", because it's not a valid command."))
                 continue;
             }
             if(pull.aliases && Array.isArray(pull.aliases)) pull.aliases.forEach(alias => client.aliases.set(alias, pull.name));
