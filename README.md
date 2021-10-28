@@ -1,16 +1,19 @@
 # Discord-JSON-Bot
 An example of how you can use JSON configurations in a Discord Bot.
 
-### How does it work?
+## How does it work?
 So basically, when you start the bot it will read the data from the JSON file "example.json" and by using the "!example" command, it will send you a text based on the guild id, defined in the JSON file.
 
-## How the JSON should look like
+## Important
+You have to put your bot token in the ".env" file or it will not work
+
+### How the JSON should look like
 ```
 {
     "guild id": "message for that guild"
 }
 ```
-## An example of the JSON
+### An example of the JSON
 ```
 {
     "803310053653872741": "example text",
