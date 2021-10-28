@@ -6,7 +6,7 @@ module.exports = {
     once: true,
     run: async(client, message, args) => {
 
-        if(!configValues.disableCommands) console.log(chalk.green("[INFO] Comandi caricato con successo!"));
-        console.log(chalk.green("[INFO] Bot avviato!."));
+        if(!configValues.disableCommands) console.log(chalk.green("[INFO] Successfully loaded commmands!"));
+        console.log(chalk.green("[INFO] Bot has been started!"));
     }
 }
