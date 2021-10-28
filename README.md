@@ -1,11 +1,12 @@
 # Discord-JSON-Bot
-An example of how you can use JSON configurations in a Discord Bot.
+## How to use
+First, download the [latest release](https://github.com/Kheeto/Discord-JSON-Bot/releases)
+Then extract the zip/tar.gz file and use the "modules.bat" file to install the required libraries
+Once you did it, put your bot token in the ".env" file after "TOKEN="
+Then, finally start the bot by opening the "start.bat" file.
 
 ## How does it work?
 So basically, when you start the bot it will read the data from the JSON file "example.json" and by using the "!example" command, it will send you a text based on the guild id, defined in the JSON file.
-
-## Important
-You have to put your bot token in the ".env" file or it will not work
 
 ### How the JSON should look like
 ```
