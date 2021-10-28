@@ -1,6 +1,6 @@
 const { readdirSync } = require("fs");
 const chalk = require('chalk');
-console.log(chalk.yellow("Caricando i comandi..."));
+console.log(chalk.yellow("Initializin commands..."));
 
 var commands;
 
@@ -12,9 +12,9 @@ module.exports = (client) => {
             pull = require(`../commands/${file}`);
             if(pull.name) {
                 client.commands.set(pull.name, pull);
-                console.log("Comando caricato: "+ chalk.cyan(pull.name));
+                console.log("Loaded command: "+ chalk.cyan(pull.name));
             } else {
-                console.log(chalk.red("[ERRORE] Impossibile caricare "+pull+", non è un comando valido."))
+                console.log(chalk.red("[ERRORE] Cannot load command "+pull+", because it's not a valid command."))
                 continue;
             }
             if(pull.aliases && Array.isArray(pull.aliases)) pull.aliases.forEach(alias => client.aliases.set(alias, pull.name));
